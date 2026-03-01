@@ -14,7 +14,6 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        resp.setContentType("text/html");
 
         String username = req.getParameter("username");
         String password = req.getParameter("password");
@@ -30,18 +29,24 @@ public class LoginServlet extends HttpServlet {
             ResultSet rs = pst.executeQuery();
 
             if (rs.next()) {
-                resp.getWriter().println("<h2>✅ Login Success</h2>");
-                resp.getWriter().println("<p>Welcome, " + username + "</p>");
-                resp.getWriter().println("<a href='index.html'>Go Home</a>");
+                // ✅ Create session (login success)
+                req.getSession(true).setAttribute("loggedInUser", username);
+
+                // ✅ Redirect to HomeServlet
+                resp.sendRedirect("home");
+                return;
+
             } else {
-                resp.getWriter().println("<h2>❌ Login Failed</h2>");
-                resp.getWriter().println("<p>Invalid username or password</p>");
-                resp.getWriter().println("<a href='login.html'>Try Again</a>");
+                // ❌ Login failed → redirect back to login page with error flag
+                resp.sendRedirect("login.html?error=1");
+                return;
             }
 
         } catch (Exception e) {
             e.printStackTrace();
+            resp.setContentType("text/html; charset=UTF-8");
             resp.getWriter().println("<h2>❌ Error: " + e.getMessage() + "</h2>");
+            resp.getWriter().println("<a href='login.html'>Back</a>");
         }
     }
 }
