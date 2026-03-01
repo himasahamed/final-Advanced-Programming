@@ -15,6 +15,7 @@
             --muted: rgba(255,255,255,.68);
             --accent:#3b82f6;
             --accent2:#22c55e;
+            --danger:#ef4444;
             --shadow: 0 18px 40px rgba(0,0,0,.45);
             --radius: 18px;
         }
@@ -51,11 +52,6 @@
             backdrop-filter: blur(10px);
             box-shadow: var(--shadow);
             padding:22px;
-        }
-
-        .left{
-            position:relative;
-            overflow:hidden;
         }
 
         .badge{
@@ -148,15 +144,6 @@
             background: rgba(255,255,255,.08);
         }
 
-        .actions{
-            margin-top:6px;
-            display:flex;
-            gap:10px;
-            align-items:center;
-            justify-content:space-between;
-            flex-wrap: wrap;
-        }
-
         .btn{
             border:none;
             cursor:pointer;
@@ -194,6 +181,18 @@
             border:1px solid rgba(34,197,94,.35);
             background: rgba(34,197,94,.10);
             color: rgba(187,247,208,.95);
+            font-size: 13px;
+            line-height:1.4;
+        }
+
+        /* ✅ Error box */
+        .errorBox{
+            display:none;
+            padding:10px 12px;
+            border-radius: 14px;
+            border:1px solid rgba(239,68,68,.45);
+            background: rgba(239,68,68,.12);
+            color: rgba(254,202,202,.95);
             font-size: 13px;
             line-height:1.4;
         }
@@ -251,6 +250,11 @@
         <h2>Login</h2>
         <p class="sub">Enter your username and password to continue.</p>
 
+        <!-- ✅ Error message shown when LoginServlet redirects with ?error=1 -->
+        <div id="errorBox" class="errorBox">
+            ❌ Invalid username or password. Please try again.
+        </div>
+
         <form method="post" action="login">
             <div>
                 <label for="username">Username</label><br>
@@ -265,7 +269,7 @@
             <button class="btn btn-primary" type="submit">Login</button>
 
             <div class="linkrow">
-                <a href="index.html">Back to Home</a>
+                <a href="home">Back to Home</a>
                 <a href="help.html">Need Help?</a>
             </div>
         </form>
@@ -276,5 +280,14 @@
     </div>
 
 </div>
+
+<script>
+    // Show error box if URL has ?error=1
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("error") === "1") {
+        document.getElementById("errorBox").style.display = "block";
+    }
+</script>
+
 </body>
 </html>
