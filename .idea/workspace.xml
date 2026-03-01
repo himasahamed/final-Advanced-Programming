@@ -9,11 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78ebed43-e4b5-47de-9356-bc66faeab489" name="Changes" comment="Initial commit: gitignor">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+    <list default="true" id="78ebed43-e4b5-47de-9356-bc66faeab489" name="Changes" comment="Initial commit: index.html">
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/roomreservation/controller/HomeServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/roomreservation/controller/BillServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roomreservation/controller/BillServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/roomreservation/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roomreservation/controller/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/roomreservation/controller/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roomreservation/controller/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/addReservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addReservation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bill.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bill.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/help.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/viewReservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/viewReservation.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -212,7 +220,7 @@
       <updated>1772208902079</updated>
       <workItem from="1772208906735" duration="19000" />
       <workItem from="1772208948796" duration="223000" />
-      <workItem from="1772213022857" duration="22551000" />
+      <workItem from="1772213022857" duration="32473000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: servlet setup + MySQL + login">
       <option name="closed" value="true" />
@@ -326,7 +334,47 @@
       <option name="project" value="LOCAL" />
       <updated>1772342980951</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Initial commit: addReservaction.html">
+      <option name="closed" value="true" />
+      <created>1772345597785</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1772345597785</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Initial commit: login.html">
+      <option name="closed" value="true" />
+      <created>1772345624921</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1772345624921</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Initial commit: workspace.xml">
+      <option name="closed" value="true" />
+      <created>1772345663586</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1772345663586</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Initial commit: viewReservation.html">
+      <option name="closed" value="true" />
+      <created>1772346134942</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1772346134942</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Initial commit: index.html">
+      <option name="closed" value="true" />
+      <created>1772346171627</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1772346171627</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,6 +406,11 @@
     <MESSAGE value="Initial commit: encodings.xml" />
     <MESSAGE value="Initial commit: login servlet" />
     <MESSAGE value="Initial commit: gitignor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit: gitignor" />
+    <MESSAGE value="Initial commit: addReservaction.html" />
+    <MESSAGE value="Initial commit: login.html" />
+    <MESSAGE value="Initial commit: workspace.xml" />
+    <MESSAGE value="Initial commit: viewReservation.html" />
+    <MESSAGE value="Initial commit: index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit: index.html" />
   </component>
 </project>
