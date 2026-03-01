@@ -37,4 +37,45 @@
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
+    <!-- AddReservationServlet -->
+    <servlet>
+        <servlet-name>AddReservationServlet</servlet-name>
+        <servlet-class>com.roomreservation.controller.AddReservationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddReservationServlet</servlet-name>
+        <url-pattern>/addReservation</url-pattern>
+    </servlet-mapping>
+    <!-- ViewReservationServlet -->
+    <servlet>
+        <servlet-name>ViewReservationServlet</servlet-name>
+        <servlet-class>com.roomreservation.controller.ViewReservationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewReservationServlet</servlet-name>
+        <url-pattern>/viewReservation</url-pattern>
+    </servlet-mapping>
+
+    <!-- BillServlet -->
+    <servlet>
+        <servlet-name>BillServlet</servlet-name>
+        <servlet-class>com.roomreservation.controller.BillServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BillServlet</servlet-name>
+        <url-pattern>/bill</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.roomreservation.controller.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
 </web-app>
